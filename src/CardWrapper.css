@@ -1,0 +1,15 @@
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 90px;
+  margin-left: 8%;
+  margin-right: 8%;
+  gap: 25px;
+}
+
+.card {
+  margin: 10px;
+  flex: 1 0 21%; /* This means the card will grow and shrink as needed, and the base width is 21% */
+}

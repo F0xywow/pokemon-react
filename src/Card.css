@@ -1,0 +1,25 @@
+#card {
+    width: 110px;
+    height: 140px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 15%;
+    background-color:darksalmon;
+    padding: 10px; /* Add padding to create space for the border */
+  }
+  
+  .card-content {
+    width: calc(100% - 20px); /* Adjust width to fit within the #card */
+    height: calc(100% - 20px); /* Adjust height to fit within the #card */
+    position: absolute;
+    text-align: center;
+    font-size: small;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+#card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s; /* Add this line */
+}
