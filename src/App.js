@@ -4,12 +4,14 @@ import CardWrapper from './CardWrapper';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState(''); // New state variable for the search term
+ 
+
 
   return (
     <div className="app">
-      <Navbar setSearchTerm={setSearchTerm} />
-      <CardWrapper searchTerm={searchTerm} />
-    </div>
+          <Navbar setSearchTerm={setSearchTerm} />
+          <CardWrapper searchTerm={searchTerm} />
+        </div>
   );
 }
 

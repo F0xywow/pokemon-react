@@ -12,4 +12,22 @@
 .card {
   margin: 10px;
   flex: 1 0 21%; /* This means the card will grow and shrink as needed, and the base width is 21% */
+  animation: slideIn 1s ease-out forwards;
+}
+
+.card:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+.card:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
